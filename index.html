@@ -1,7 +1,6 @@
 <!-- KSF PROXY, ALL RIGHTS RESERVED.-->
 <!-- PROPERTY OF KILL SECURLY FOUNDATION -->
 
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,50 +8,42 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
-        <style>
-            body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } 
-            canvas{ display: block; vertical-align: bottom; } 
-            #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #0F0F1A; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } 
-            h1{ color: whitesmoke;} 
-            .schoolbell-regular { font-family: "Schoolbell", cursive; font-weight: 400; font-style: normal; } 
-            input::placeholder { text-align: center; }
-        </style>
-
         <div id="particles-js"></div>
         <script src="scripts/particles.min.js"></script>
         <script>
             particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":true,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"window","events":{"onhover":{"enable":true,"mode":"push"},"onclick":{"enable":false,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":111.88095865998595,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
         </script>
-        <p style="position: absolute; color: whitesmoke; font-size: 16px; left: 10px">Good morning, ExampleUser67</p> <!-- USERNAME !! MODIFY FOR REAL PRODUCTION-->
-        <div style="position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%); width: max-content; display: grid; grid-auto-flow: row; " id="board">
-            <h1 style="font-size: 95px; text-align: center" class="schoolbell-regular"> K S F Proxy</h1> <!-- title -->
-            <input style="backdrop-filter: blur(10px); background-color: rgb(163, 163, 163, 0.3); width: fit-content; justify-self: center; border-radius: 30px; width: 80ch; height: 40px; border-style: solid; border-width: 0px;" id="search" placeholder="Search or Enter a URL..."></input>
-            <br>
-            <br>
-            <br>
-            <div style="backdrop-filter: blur(10px); display: grid; grid-auto-flow: column; padding: 3ch; border-radius: 17px; background-color: rgba(32, 32, 37, 0.3); width: 55ch; justify-self: center; justify-items: center; box-shadow: 0px 0px 25px 15px rgba(0, 0, 0, 0.5);" id="bookmarks">
-                <div style="display: grid; justify-items: center; width: fit-content;">
-                    <img style="width: 48px; background-color: rgba(78, 78, 82, 0.7); border-radius: 10px;" src="img/placeholder.png">
-                    <p style="color: whitesmoke; text-align: center">Example</p>
-                </div>
-                    <div style="display: grid; justify-items: center; width: fit-content;">
-                    <img style="width: 48px; background-color: rgba(78, 78, 82, 0.7); border-radius: 10px;" src="img/placeholder.png">
-                    <p style="color: whitesmoke; text-align: center">Example</p>
-                </div>
-                    <div style="display: grid; justify-items: center; width: fit-content;">
-                    <img style="width: 48px; background-color: rgba(78, 78, 82, 0.7); border-radius: 10px;" src="img/placeholder.png">
-                    <p style="color: whitesmoke; text-align: center">Example</p>
-                </div>
-                    <div style="display: grid; justify-items: center; width: fit-content;">
-                    <img style="width: 48px; background-color: rgba(78, 78, 82, 0.7); border-radius: 10px;" src="img/placeholder.png">
-                    <p style="color: whitesmoke; text-align: center">Example</p>
-                </div>
-                    <div style="display: grid; justify-items: center; width: fit-content;">
-                    <img style="width: 48px; background-color: rgba(78, 78, 82, 0.7); border-radius: 10px;" src="img/add.png">
-                    <p style="color: whitesmoke; text-align: center">Add</p>
-                </div>
+
+        <p id="username">Good morning, ExampleUser67</p> <!-- USERNAME !! MODIFY FOR REAL PRODUCTION-->
+
+        <div id="board">
+            <h1 class="schoolbell-regular"> K S F Proxy</h1>
+            <input id="search" placeholder="Search or Enter a URL..."></input>
+            <br><br><br>
+            <div id="bookmarks">
+                <button class="bookmark-btn">
+                    <img src="img/placeholder.png">
+                    <p>Example</p>
+                </button>
+                <button class="bookmark-btn">
+                    <img src="img/placeholder.png">
+                    <p>Example</p>
+                </button>
+                <button class="bookmark-btn">
+                    <img src="img/placeholder.png">
+                    <p>Example</p>
+                </button>
+                <button class="bookmark-btn">
+                    <img src="img/placeholder.png">
+                    <p>Example</p>
+                </button>
+                <button class="bookmark-btn">
+                    <img src="img/add.png">
+                    <p>Add</p>
+                </button>
             </div>
         </div>
     </body>
